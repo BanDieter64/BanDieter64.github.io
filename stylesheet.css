@@ -1,0 +1,218 @@
+
+body {
+    background-color: rgb(0, 0, 0)
+}
+
+h1 {
+font-family: Tekton Pro;
+font-weight: bold;
+font-size: 40px;
+color: rgb(255, 255, 255);
+margin-left: 5%;
+margin-right: 5%;
+}
+
+h2 {
+font-family: Tekton Pro;
+font-weight: bold;
+font-size: 30px;
+color: rgb(255, 255, 255);
+margin-left: 5%; 
+margin-right: 5%; 
+}
+
+h3 { 
+font-family: Tekton Pro;
+font-weight: bold;
+font-size: 20px;
+color: rgb(255, 255, 255);
+margin-left: 5%; 
+margin-right: 5%; 
+}
+
+p {
+font-family: calibri;
+color: rgb(241, 148, 219);
+margin-left: 5%;
+margin-right: 5%;
+}
+
+a { 
+color: silver;
+text-decoration: none;
+}
+
+a:hover { 
+text-decoration: underline;</b>
+}
+
+a:active { 
+text-decoration: underline;
+}
+
+a:visited { 
+text-decoration: none;
+}
+
+ol { 
+font-family: calibri;
+}
+
+ul { 
+font-family: calibri;
+color: rgba(51,0,39,1);
+margin-left: 7.5%;
+margin-right: 5%;
+}
+
+dl { 
+font-family: calibri;
+color: rgb(255, 255, 255);
+margin-left: 5%;
+margin-right: 5%;
+}
+
+table { 
+font-family: arial;
+color: rgb(255, 255, 255);
+margin-left: 5%;
+margin-right: 5%;
+}
+
+th { 
+background-color: rgba(100,100,100,0.6);
+}
+
+td { 
+background-color: rgba(150,150,150,0.6);
+}
+
+section {
+position:relative;
+width: 60%;
+padding-bottom: 3%;
+overflow: hidden;
+background-color: #30235B;
+margin-left: 20%;
+margin-right: 20%;
+margin-bottom: 100px;
+border-radius: 120px;
+box-shadow: 0px 0px 25px rgb(122, 122, 122);
+}
+
+img { 
+border-width: 15px;
+border-top-width: 5px;
+border-bottom-width: 0px;
+border-color: transparent;
+border-style: solid;
+}
+
+.navigation_bar {
+    height: 160px;
+    width: 100%; /* or any desired width */
+    overflow: hidden; /* This will hide any overflowing content */
+}
+
+
+.sectionl { 
+position: relative;
+float: left;
+width: 22.5%;
+}
+
+.sectionr { 
+position: relative;
+width: 72.5%;
+margin-left: 20%;
+}
+
+.special_midden {
+position: absolute;
+overflow: hidden;
+width: 98%;
+margin-left: -6%;
+margin-right: 1%;
+margin-top: -37%;
+margin-bottom: 10%;
+size: cover;
+}
+
+.center {
+text-align: center;
+color: white;
+margin-left: 16%;
+margin-right: 16%;
+margin-top: 2%;
+margin-bottom: 0%;
+font-family: "Courier New", arial;
+}
+
+.left_align { 
+text-align: left;
+width: 50%;
+}
+
+.fload_r { 
+position: relative;
+float: right;
+margin-right: 5%;
+width: 30%;
+border-right-width: 0px;
+}
+
+.fload_l { 
+position: relative;
+float: left;
+margin-left: 5%;
+width: 30%;
+border-left-width: 0px;
+}
+
+.fload_l_s { 
+position: relative;
+float: left;
+margin-left: 1.7%;
+width: 30%;
+border-left-width: 0px;
+border-bottom-width: 15px;
+}
+
+.img_m { 
+border-width: 0px;
+width: 100%;
+}
+
+.space { 
+border-bottom-style: solid;
+border-width: 5px;
+border-color: transparent;
+position: relative;
+width: 50%;
+height: 60px;
+}
+
+.honderd { 
+width: 90%;
+
+}
+
+#space { 
+height: 40px
+}
+
+
+#navigation_stroke_id_1 {
+position: relative;
+margin-top: 20px
+height: 40%;
+z-index: 1;
+width: 99%;
+}
+
+#navigation_stroke_id {
+position: relative;
+margin-top: 20px
+height: 40%;
+width: 99%;
+}

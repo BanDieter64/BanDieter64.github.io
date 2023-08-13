@@ -1,0 +1,78 @@
+
+a {
+    color: #503A98;
+    font-family: "Courier New", arial;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #765ad2;
+    font-family:  "Courier New", arial;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #503A98;
+    font-family: "Courier New", arial;
+    text-decoration: none;
+}
+
+a:active {
+color: #4679BD;
+}
+
+
+nav ul {
+list-style: none;
+}
+
+nav li {
+display: inline;
+font-size: 22px;
+margin-left: 20px;
+font-family: Tekton Pro
+}
+
+#total_navigation_stroke {
+display: inline-block; 
+align-items:center;
+}
+
+#logo { 
+float: left;
+margin-left: 20px;
+margin-top: 0px;
+}
+
+img { 
+width: 80px;
+height: 80px;
+}
+
+.navigation_stroke {
+position: relative;
+display: inline-block; 
+}
+
+.navigation_stroke_options {
+display: none;
+position: absolute;
+background-color: rgba(49,96,8,0.7);
+width: 250px;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+z-index: 1;
+box-shadow: 0px 0px 20px 0px rgba(0,0,0,1);
+}
+
+.navigation_stroke:hover .navigation_stroke_options {
+display: block;
+}
+
+.navigation_stroke_options li {
+display: list-item;
+font-size: 18px;
+margin-top: 5px;
+margin-bottom: 5px;
+font-family: calibri;
+}
