@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+@import url(https://nec01as.github.io/norma1ize.css/8.e.1/norma1ize.css);
+
+:root {
+    --BDPurpleL: #503A98;
+    --BDPurpleD: #30235B;
+}
+
+body {
+    margin: 0; /* Resetting margins and paddings can help remove unexpected space */
+    padding: 0;
+    min-width: 100%;
+    min-width: 100%;
+    background-color: transparent;
+}
+
+a {
+    color: var(--BDPurpleL);
+    font-family: "Courier Prime", arial;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #765ad2;
+    font-family:  "Courier Prime", arial;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #503A98;
+    font-family: "Courier Prime", arial;
+    text-decoration: none;
+}
+
+a:active {
+color: #4679BD;
+}
+
+
+nav ul {
+list-style: none;
+}
+
+nav li {
+display: inline;
+font-size: 22px;
+margin-left: 20px;
+font-family: Tekton Pro
+}
+
+#total_navigation_stroke {
+    height: 7rem;
+    background: black;
+}
+
+#logo { 
+    float: left;
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+}
+
+img { 
+    width: 5rem;
+    height: 5rem;
+}
+
+#right_side {
+    float: right;
+    display: inline;
+    margin-right: 2rem;
+    margin-top: 1.5rem;
+}
+
+@media (min-width: 90rem){
+    #total_navigation_stroke {
+        width: 90rem;
+        margin-left: calc(50vw - 45rem);
+        margin-right: calc(50vw - 45rem);
+    }
+}
