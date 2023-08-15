@@ -46,14 +46,14 @@ font-family: Tekton Pro
 }
 
 #total_navigation_stroke {
-    height: 6rem;
+    height: 7rem;
     background: black;
 }
 
 #logo { 
     float: left;
-    margin-left: 1.5rem;
-    margin-top: 0px;
+    margin-left: 2rem;
+    margin-top: 0.5rem;
 }
 
 img { 
@@ -64,8 +64,8 @@ img {
 #right_side {
     float: right;
     display: inline;
-    margin-right: 1.5rem;
-    margin-top: 1rem;
+    margin-right: 2rem;
+    margin-top: 1.5rem;
 }
 
 @media (min-width: 90rem){
