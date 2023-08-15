@@ -1,6 +1,18 @@
+:root {
+    --BDPurpleL: #503A98;
+    --BDPurpleD: #30235B;
+}
+
+body {
+    margin: 0; /* Resetting margins and paddings can help remove unexpected space */
+    padding: 0;
+    min-width: 100%;
+    min-width: 100%;
+    background-color: transparent;
+}
 
 a {
-    color: #503A98;
+    color: var(--BDPurpleL);
     font-family: "Courier New", arial;
     text-decoration: none;
 }
@@ -34,45 +46,32 @@ font-family: Tekton Pro
 }
 
 #total_navigation_stroke {
-display: inline-block; 
-align-items:center;
+    height: 6rem;
+    background: black;
 }
 
 #logo { 
-float: left;
-margin-left: 20px;
-margin-top: 0px;
+    float: left;
+    margin-left: 1.5rem;
+    margin-top: 0px;
 }
 
 img { 
-width: 80px;
-height: 80px;
+    width: 5rem;
+    height: 5rem;
 }
 
-.navigation_stroke {
-position: relative;
-display: inline-block; 
+#right_side {
+    float: right;
+    display: inline;
+    margin-right: 1.5rem;
+    margin-top: 1rem;
 }
 
-.navigation_stroke_options {
-display: none;
-position: absolute;
-background-color: rgba(49,96,8,0.7);
-width: 250px;
-border-bottom-left-radius: 10px;
-border-bottom-right-radius: 10px;
-z-index: 1;
-box-shadow: 0px 0px 20px 0px rgba(0,0,0,1);
-}
-
-.navigation_stroke:hover .navigation_stroke_options {
-display: block;
-}
-
-.navigation_stroke_options li {
-display: list-item;
-font-size: 18px;
-margin-top: 5px;
-margin-bottom: 5px;
-font-family: calibri;
+@media (min-width: 90rem){
+    #total_navigation_stroke {
+        width: 90rem;
+        margin-left: calc(50vw - 45rem);
+        margin-right: calc(50vw - 45rem);
+    }
 }
