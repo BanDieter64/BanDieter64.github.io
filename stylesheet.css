@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+@import url(https://nec01as.github.io/norma1ize.css/8.e.1/norma1ize.css);
+
 :root {
     --BDPurpleL: #503A98;
     --BDPurpleD: #30235B;
@@ -83,18 +86,19 @@ a:visited {
     margin-right: 16%;
     margin-top: 2%;
     margin-bottom: 0%;
-    font-family: "Courier New", arial;
+    font-family: "Courier Prime", arial;
 }
 
 .space { 
 border-bottom-style: solid;
-border-width: 10rem;
+border-width: 15rem;
 border-color: transparent;
 position: relative;
 }
 
 #navigation_stroke {
     position: fixed;
+    max-height: 7rem;
     z-index: 1;
     width: 100%;
 }
