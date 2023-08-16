@@ -14,29 +14,6 @@ body {
     background-color: transparent;
 }
 
-a {
-    color: var(--BDPurpleL);
-    font-family: "Courier Prime", arial;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #765ad2;
-    font-family:  "Courier Prime", arial;
-    text-decoration: underline;
-}
-
-a:visited {
-    color: #503A98;
-    font-family: "Courier Prime", arial;
-    text-decoration: none;
-}
-
-a:active {
-color: #4679BD;
-}
-
-
 nav ul {
 list-style: none;
 }
@@ -67,7 +44,7 @@ img {
 #right_side {
     float: right;
     display: inline;
-    margin-right: 2rem;
+    margin-right: 1rem;
     margin-top: 1.5rem;
 }
 
@@ -77,4 +54,69 @@ img {
         margin-left: calc(50vw - 45rem);
         margin-right: calc(50vw - 45rem);
     }
+}
+
+
+a:link {
+    color: var(--BDPurpleL);
+    font-family: "Courier Prime", arial;
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--BDPurpleL);
+}
+
+a:hover {
+    color: var(--BDPurpleD);
+}
+
+a:active {
+    color: #4679BD;
+}
+
+.taal2:link {
+    margin-left: 5rem;
+    color: var(--BDPurpleL);
+    font-family: "Courier Prime", arial;
+    text-decoration: none;
+}
+
+.taal2:visited {
+    color: var(--BDPurpleL);
+}
+
+.taal2:hover {
+    background: transparent;
+    color: transparent;
+}
+
+.taal2:active {
+    background: transparent;
+    color: transparent;
+}
+
+.taal1:link {
+    color: transparent;
+    font-family: "Courier Prime", arial;
+    text-decoration: none;
+    padding-right: 1rem;
+    margin-left: -2.4rem;
+}
+
+.taal1:visited {
+    background: black;
+    margin-left: 5rem;
+    color: var(--BDPurpleL);
+    font-family: "Courier Prime", arial;
+    text-decoration: none;
+}
+
+.taal1:hover {
+    color: var(--BDPurpleD);
+    background: black;
+}
+
+.taal1:active {
+    color: #4679BD;
 }
