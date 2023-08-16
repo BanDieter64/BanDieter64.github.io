@@ -4,6 +4,10 @@
 :root {
     --BDPurpleL: #503A98;
     --BDPurpleD: #30235B;
+    --MinWidthScreen: 90rem;
+    --MinWidthOpening: 54rem;
+    --LogoWidth: 8rem;
+    --MinWidthNav: 16.5rem;
 }
 
 body {
@@ -11,18 +15,17 @@ body {
     padding: 0;
     min-width: 100%;
     min-width: 100%;
-    background-color: transparent;
+    background-color: black;
+    overflow: hidden;
 }
 
-nav ul {
-list-style: none;
-}
-
-nav li {
-display: inline;
-font-size: 22px;
-margin-left: 20px;
-font-family: Tekton Pro
+nav {
+    list-style: none;
+    display: inline;
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    color: var(--BDPurpleL);
+    font-family: "Courier Prime", arial;
 }
 
 #total_navigation_stroke {
@@ -30,37 +33,73 @@ font-family: Tekton Pro
     background: black;
 }
 
-#logo { 
-    float: left;
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
+}
+
+.logo { 
+    grid-column: 1;
+    justify-self: left;
     margin-left: 2rem;
     margin-top: 0.5rem;
+    width: var(--LogoWidth);
+    /*border: solid;
+    border-width: 2px;
+    border-color: green;*/
 }
 
 img { 
+    float:left;
     width: 5rem;
     height: 5rem;
 }
 
+#fas_fa-bars{
+    display: none;
+}
+
+.mid_side {
+    grid-column: 2;
+    justify-content: center;
+    width: 38rem;
+    margin-top: 2.5rem;
+    /*border: solid;
+    border-width: 2px;
+    border-color: green;*/
+}
+
 #right_side {
     float: right;
-    display: inline;
+}
+
+.right_side {
+    grid-column: 3;
+    justify-self: right;
     margin-right: 1rem;
-    margin-top: 1.5rem;
+    margin-top: 2.4rem;
+    width: 5.5rem;
+    /*border: solid;
+    border-width: 2px;
+    border-color: green;*/
 }
 
-@media (min-width: 90rem){
-    #total_navigation_stroke {
-        width: 90rem;
-        margin-left: calc(50vw - 45rem);
-        margin-right: calc(50vw - 45rem);
-    }
-}
+.space { 
+    border-bottom-style: solid;
+    border-width: 15rem;
+    border-color: transparent;
+    position: relative;
+    pointer-events: none;
+    }    
 
+.credits {
+    position: relative;
+}
 
 a:link {
-    color: var(--BDPurpleL);
-    font-family: "Courier Prime", arial;
+    text-align: center;
     text-decoration: none;
+    color: var(--BDPurpleL);
 }
 
 a:visited {
@@ -76,9 +115,6 @@ a:active {
 }
 
 .taal2:link {
-    margin-left: 5rem;
-    color: var(--BDPurpleL);
-    font-family: "Courier Prime", arial;
     text-decoration: none;
 }
 
@@ -98,15 +134,14 @@ a:active {
 
 .taal1:link {
     color: transparent;
-    font-family: "Courier Prime", arial;
     text-decoration: none;
     padding-right: 1rem;
-    margin-left: -2.4rem;
+    padding-left: 0.2rem;
+    margin-left: -2.8rem;
 }
 
 .taal1:visited {
     background: black;
-    margin-left: 5rem;
     color: var(--BDPurpleL);
     font-family: "Courier Prime", arial;
     text-decoration: none;
@@ -119,4 +154,44 @@ a:active {
 
 .taal1:active {
     color: #4679BD;
+}
+
+@media (min-width: 90rem){
+    #total_navigation_stroke {
+        width: var(--MinWidthScreen);
+        margin-left: calc(50vw - var(--MinWidthScreen)/2);
+        margin-right: calc(50vw - var(--MinWidthScreen)/2);
+    }
+    .credits {
+        margin-left: calc(50vw - var(--MinWidthScreen)/2);
+    }
+}
+
+@media (max-width: 57rem){
+    .mid_side {
+        width: var(--MinWidthNav);
+        margin-left: 2vw;
+    }
+    #mid_side{
+        display: block;
+        margin-left: 0;
+        margin-bottom: 5rem;
+    }
+    #fas_fa-bars{
+        display: block;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        text-align: center;
+        margin-bottom: 10rem;
+    }
+    @media (max-width: 33rem){
+        .mid_side {
+            margin-left: calc((100vw - 33rem)*0.75);
+            margin-right: auto;
+        }
+        .right_side {
+            margin-left: calc((100vw - 33rem)*0.25);
+            margin-right: auto;
+        }
+    }
 }
