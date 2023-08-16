@@ -1,0 +1,82 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+ 	  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ 	  <script src="html5.js" type="text/javascript"> </script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	  <link href="navigation_stroke.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="images/weird.ico" type="image/x-icon">
+	  <title> Navigation Stroke </title>
+</head>
+<body>
+  <div class="grid-container" id="total_navigation_stroke">
+    <div class="logo">
+      <a href="http://www.didiso.com" target="_parent"><img src="images/home.png" alt="LOGO"></a>
+    </div>
+    <div class="mid_side">
+      <nav id="fas_fa-bars">
+        <label>
+          <a href="#" id="alternateLink">
+            <i class="fas fa-bars"></i>
+          </a>
+          <script>
+            document.getElementById('alternateLink').addEventListener('click', function(event) {
+                event.preventDefault();  // Prevent the default link behavior
+                window.top.getSelection
+
+                if (window !== window.top) {
+                  window.top.location.href = 'navigation_stroke.html';
+                } else {
+                  window.history.back();  // Go to the previous page
+                }
+            });
+          </script>
+        </label>
+      </nav>
+      <nav>
+        <a href="services.html" target="_parent" id="mid_side">Diensten
+        </a>
+      </nav>
+      <nav>
+        <a href="digital_resources.html" target="_parent" id="mid_side">Digitaal Materiaal
+        </a>
+      </nav>
+      <nav>
+        <a href="contact.html" target="_parent" id="mid_side">Contact
+        </a>
+      </nav>
+    </div>
+    <div class="right_side">
+      <nav id="right_side">
+        <a class="taal2" href="https://www.didiso.com/en/404_error" target="_parent">NL
+        </a>
+        <a class="taal1" href="#" id="change_language">EN
+        </a>
+        <script>
+          document.getElementById('change_language').addEventListener('click', function(event) {
+            event.preventDefault();  // Prevent the default link behavior
+
+            var currentUrl = window.top.location.href;
+
+            if (currentUrl.includes("en/") || currentUrl.includes("nl/")) {
+              if (currentUrl.includes("en/")) {
+                window.top.location.href = currentUrl.replace("en/", "nl/");
+              } else {
+                window.top.location.href = currentUrl.replace("nl/", "en/");
+              }
+            } else {
+              window.top.location.href = 'https://www.didiso.com/nl/';
+            }
+          });
+        </script>
+      </nav>
+    </div>
+  </div>
+  <div class="space"></div>
+  <div class="space"></div>
+  <div class="space"></div>
+  <div class="space"></div>
+  <object class="credits" name="credits" type="text/html" data="credits.html">
+  </object>
+</body>
+</html>
