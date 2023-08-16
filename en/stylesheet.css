@@ -43,7 +43,12 @@ p {
     margin-right: 2rem;
 }
 
-a { 
+a:link { 
+    color: var(--LinkGrey);
+    text-decoration: none;
+}
+
+a:visited {
     color: var(--LinkGrey);
     text-decoration: none;
 }
@@ -53,11 +58,8 @@ a:hover {
 }
 
 a:active { 
+    color: #4679BD;
     text-decoration: underline;
-}
-
-a:visited { 
-    text-decoration: none;
 }
 
 .credits {
