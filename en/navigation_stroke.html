@@ -56,13 +56,13 @@
           document.getElementById('change_language').addEventListener('click', function(event) {
             event.preventDefault();  // Prevent the default link behavior
 
-            var currentUrl = decodeURIComponent(window.top.location.href);
+            var currentUrl = window.top.location.href;
 
             if (currentUrl.includes("en/") || currentUrl.includes("nl/")) {
               if (currentUrl.includes("en/")) {
-                window.top.location.href = encodeURIComponent(currentUrl.replace("en/", "nl/"));
+                window.top.location.href = currentUrl.replace("en/", "nl/");
               } else {
-                window.top.location.href = encodeURIComponent(currentUrl.replace("nl/", "en/"));
+                window.top.location.href = currentUrl.replace("nl/", "en/");
               }
             } else {
               window.top.location.href = 'https://www.didiso.com/nl/';
